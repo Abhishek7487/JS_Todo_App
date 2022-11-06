@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Graduate&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  height: 100%;
+  background-color: #092035;
+}
+
+.containerDiv {
+  height: 100%;
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.4rem;
+  margin-bottom: 8.6rem;
+}
+
+.containerDiv .todoHeading .heading {
+  font-size: 2.4rem;
+  font-family: "Graduate", sans-serif;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 2px;
+  margin-top: 5rem;
+}
+
+.containerDiv .addTodo {
+  width: 100%;
+  display: flex;
+  gap: 1.2rem;
+}
+
+.containerDiv .addTodo .todoInput {
+  width: 75%;
+  font-size: 1.2rem;
+  background-color: #091f36;
+  color: #fff;
+  padding: 0.8rem 2rem;
+  border: 0.2rem solid;
+  border-image: linear-gradient(to right, #e81cff, #00a3ff) 1;
+}
+
+.containerDiv .addTodo .todoInput:focus {
+  outline: none;
+}
+
+.containerDiv .addTodo .addBtn {
+  width: 25%;
+  font-size: 1.8rem;
+  font-family: "Graduate", sans-serif;
+  background: #7277f1;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+
+.containerDiv .addTodo .addBtn:hover {
+  background: #7276f1c2;
+}
+
+.containerDiv .addTodo .addBtnIcon {
+  display: none;
+}
+
+.containerDiv .todoList {
+  width: 100%;
+  margin-top: 2.4rem;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.containerDiv .todoList .todo {
+  width: 100%;
+  display: flex;
+  gap: 1.2rem;
+}
+
+.containerDiv .todoList .todo .addedTodoInput {
+  width: 75%;
+  font-size: 1.2rem;
+  background-color: #153048;
+  color: #fff;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.containerDiv .todoList .todo .addedTodoInput:focus {
+  outline: none;
+  border: 1px solid #00a3ff;
+}
+
+.containerDiv .todoList .todo .btns {
+  width: 25%;
+  display: flex;
+  gap: 0.6rem;
+}
+
+.containerDiv .todoList .todo .btns .editBtn,
+.containerDiv .todoList .todo .btns .deleteBtn {
+  width: 50%;
+  font-size: 1.2rem;
+  background-color: #7377f2cb;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.1s;
+}
+
+.containerDiv .todoList .todo .btns .editBtn:hover,
+.containerDiv .todoList .todo .btns .deleteBtn:hover {
+  background-color: #7377f2;
+}
+
+@media screen and (max-width: 1200px) {
+  .containerDiv {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 80%;
+  }
+
+  .containerDiv {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .containerDiv {
+    width: 85%;
+  }
+
+  .containerDiv .addTodo .addBtn {
+    display: none;
+  }
+
+  .containerDiv .addTodo .addBtnIcon {
+    display: block;
+    width: 18%;
+    font-size: 1.8rem;
+    font-family: "Graduate", sans-serif;
+    background: #7277f1;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.1s;
+  }
+
+  .containerDiv .addTodo .addBtnIcon:hover {
+    background: #7276f1c2;
+  }
+}
